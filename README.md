@@ -12,7 +12,7 @@ C:\Users\<username>\AppData\Microsoft\[Random]\
 C:\ProgramData\Microsoft\[Random]\
 C:\[a-z]{5}\
 Examples:
-C:\Datop\[Random].ocx 
+C:\Datop\[Random].ocx
 C:\Jambo\[Random].ocx 
 C:\Babmo\[Random].ocx 
 C:\Dabmo\[Random].ocx 
