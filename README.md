@@ -10,7 +10,15 @@ FileFullName RegExp "Users\\Public\\[^\\\{\}]+$" AND ( EventType IN ( "File Crea
 Description: These OCX files are renamed DLLs and are executed using the regsvr32.exe command to install the malware payload.
 C:\Users\<username>\AppData\Microsoft\[Random]\
 C:\ProgramData\Microsoft\[Random]\
-C:\[a-z]{5}\ Example: Datop, Jambo, Babmo, Dabmo, Badna and etc. 
+C:\[a-z]{5}\
+Examples:
+C:\Datop\[Random].ocx 
+C:\Jambo\[Random].ocx 
+C:\Babmo\[Random].ocx 
+C:\Dabmo\[Random].ocx 
+C:\Badna\[Random].ocx
+Note: This will detect all the above because the regex is looking for any 5 characters in the folder name.
+
 Regex is for any five characters.
 Credit to Drew Hjelm (Tetra Defense) and Max_Malyutin(Twitter Handle)
 
