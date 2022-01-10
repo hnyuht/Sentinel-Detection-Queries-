@@ -1,1 +1,1 @@
-# Sentinel-Detection-Queries-
+# Sentinel-Detection-Queries
