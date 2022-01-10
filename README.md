@@ -11,6 +11,9 @@ Description: These OCX files are renamed DLLs and are executed using the regsvr3
 C:\Users\<username>\AppData\Microsoft\[Random]\
 C:\ProgramData\Microsoft\[Random]\
 C:\[a-z]{5}\
+C:\Users\<username>\AppData\Microsoft\[Random]\
+C:\ProgramData\Microsoft\[Random]\
+C:\[a-z]{5}\
 Example: C:\Datop\[Random].ocx 
 Example: C:\Jambo\[Random].ocx 
 Example: C:\Babmo\[Random].ocx 
