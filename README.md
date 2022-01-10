@@ -6,7 +6,7 @@ Description: Suspicous BAT/CMD/DLL/EXE/ZIP/PS1/HTA/HTML files being Created, Mod
 FileFullName RegExp "Users\\Public\\[^\\\{\}]+$" AND ( EventType IN ( "File Creation", "File Modification" , "File Deletion" , "File Rename" ) AND (FileFullName EndsWithCIS ".bat" OR FileFullName EndsWithCIS ".cmd" OR FileFullName EndsWithCIS ".dll" OR FileFullName EndsWithCIS ".exe" OR FileFullName EndsWithCIS ".zip" OR FileFullName EndsWithCIS ".ps1" OR FileFullName ContainsCIS ".ht" ))
 ```
 
-### Qakbot detection in C, ProgramData, and AppData.
+### Qakbot detection in the following Directories C, ProgramData, and AppData.
 Description: These OCX files are renamed DLLs and are executed using the regsvr32.exe command to install the malware payload.
 C:\Users\<username>\AppData\Microsoft\[Random]\
 C:\ProgramData\Microsoft\[Random]\
