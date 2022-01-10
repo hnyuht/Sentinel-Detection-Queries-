@@ -12,11 +12,11 @@ C:\Users\<username>\AppData\Microsoft\[Random]\
 C:\ProgramData\Microsoft\[Random]\
 C:\[a-z]{5}\
 This regex will detect any of the below folder names and if change to new ones.
-C:\Datop\[Random].ocx 
-C:\Jambo\[Random].ocx 
-C:\Babmo\[Random].ocx 
-C:\Dabmo\[Random].ocx 
-C:\Badna\[Random].ocx
+#C:\Datop\[Random].ocx 
+#C:\Jambo\[Random].ocx 
+#C:\Babmo\[Random].ocx 
+#C:\Dabmo\[Random].ocx 
+#C:\Badna\[Random].ocx
 
 ```
 SrcProcParentName = "regsvr32.exe" AND (TgtFilePath RegExp "ProgramData\\Microsoft" OR TgtFilePath RegExp "AppData\\Roaming\\Microsoft" OR TgtFilePath RegExp "C:\\[a-z]{5}\\[^\\\{\}]+$") AND TgtFileExtension In ("dll", "ocx", "good")
