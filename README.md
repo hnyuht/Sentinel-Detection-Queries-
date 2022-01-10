@@ -28,7 +28,7 @@ SrcProcParentName = "regsvr32.exe" AND (TgtFilePath RegExp "ProgramData\\Microso
 
 ### Suspicious ISO sent as Outlook Attachments.
 Description: Email gateway scanners don’t scan ISO file attachments properly and can contain malware.
-Windows (Windows 8 and Windows 10) feature a native ISO mounting tool. Opening an ISO file is now as simple as double-clicking the file. This increases the chances of the target opening the file and infecting their system. This query was created if you needed to find the suspicious/malicious ISO attachment.
+Windows (Windows 8 and Windows 10) feature a native ISO mounting tool. Opening an ISO file is now as simple as double-clicking the file. This increases the chances of the target opening the file and infecting their system. This query was created if you needed to find the suspicious ISO attachment.
 
 ```
 TgtFilePath RegExp "AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.Outlook" AND TgtFileExtension = "iso"
