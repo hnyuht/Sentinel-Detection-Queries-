@@ -11,14 +11,11 @@ Description: These OCX files are renamed DLLs and are executed using the regsvr3
 C:\Users\<username>\AppData\Microsoft\[Random]\
 C:\ProgramData\Microsoft\[Random]\
 C:\[a-z]{5}\
-C:\Users\<username>\AppData\Microsoft\[Random]\
-C:\ProgramData\Microsoft\[Random]\
-C:\[a-z]{5}\
-Example: C:\Datop\[Random].ocx 
-Example: C:\Jambo\[Random].ocx 
-Example: C:\Babmo\[Random].ocx 
-Example: C:\Dabmo\[Random].ocx 
-Example: C:\Badna\[Random].ocx
+C:\Datop\[Random].ocx
+C:\Jambo\[Random].ocx 
+C:\Babmo\[Random].ocx 
+C:\Dabmo\[Random].ocx
+C:\Badna\[Random].ocx
 
 ```
 SrcProcParentName = "regsvr32.exe" AND (TgtFilePath RegExp "ProgramData\\Microsoft" OR TgtFilePath RegExp "AppData\\Roaming\\Microsoft" OR TgtFilePath RegExp "C:\\[a-z]{5}\\[^\\\{\}]+$") AND TgtFileExtension In ("dll", "ocx", "good")
