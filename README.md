@@ -1,3 +1,5 @@
+I decided to start sharing my detection and threat hunting queries that I made in SentinelOne. First, I want to thank Tetra Defense for allowing me to research, develop, hunt, and build here. I also wish to thank Brad, Dan, Drew, Joe, Billy, and credit other security resources for helping me create these queries. All other credit will be found under each query.
+
 # Sentinel-Detection-Queries
 
 ### Suspicious Public Folders in Use.
