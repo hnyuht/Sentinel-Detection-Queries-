@@ -1,9 +1,12 @@
-I decided to start sharing my detection and threat hunting queries that I made in SentinelOne. First, I want to thank Tetra Defense for allowing me to research, develop, hunt, and build here. I also wish to thank Brad, Dan, Drew, Joe, Billy, and credit other security resources for helping me create these queries. All other credit will be found under each query.
+I decided to start sharing my detection and threat hunting queries that I made in SentinelOne. First, I want to thank Tetra Defense for allowing me to research, develop, hunt, build, and work here. I also wish to thank Brad Roughan, Dan Spina, Drew Hjelm, Joe Wedderspoon, William (Billy) Cordio, and others at Tetra Defense but also I want to credit other security resources for helping me create these queries. All other credit will be found under each query.
+
+I also want to personally thank David Kruse and Marlene Jones (Tetra Defense) for helping me with this idea.
 
 # Sentinel-Detection-Queries
 
 ### Suspicious Public Folders in Use.
 Description: Suspicous BAT/CMD/DLL/EXE/ZIP/PS1/HTA/HTML files being Created, Modified, Deleted and Renamed in Public Users directory.
+Note: This was one of my first queries and I would like to thank Brad Roughan for helping me further improve this query.
 ```
 FileFullName RegExp "Users\\Public\\[^\\\{\}]+$" AND ( EventType IN ( "File Creation", "File Modification" , "File Deletion" , "File Rename" ) AND (FileFullName EndsWithCIS ".bat" OR FileFullName EndsWithCIS ".cmd" OR FileFullName EndsWithCIS ".dll" OR FileFullName EndsWithCIS ".exe" OR FileFullName EndsWithCIS ".zip" OR FileFullName EndsWithCIS ".ps1" OR FileFullName ContainsCIS ".ht" ))
 ```
