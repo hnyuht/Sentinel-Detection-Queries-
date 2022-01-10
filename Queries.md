@@ -6,7 +6,7 @@ I also want to personally thank David Kruse and Marlene Jones (Tetra Defense) fo
 
 ### Suspicious Public Folders in Use.
 Description: Suspicous BAT/CMD/DLL/EXE/ZIP/PS1/HTA/HTML files being Created, Modified, Deleted and Renamed in Public Users directory.
-Note: This was one of my first queries and I would like to thank Brad Roughan for helping me further improve this query.
+Note: This was one of my first queries and I would like to thank Brad Roughan (Tetra Defense) for helping me further improve this query.
 ```
 FileFullName RegExp "Users\\Public\\[^\\\{\}]+$" AND ( EventType IN ( "File Creation", "File Modification" , "File Deletion" , "File Rename" ) AND (FileFullName EndsWithCIS ".bat" OR FileFullName EndsWithCIS ".cmd" OR FileFullName EndsWithCIS ".dll" OR FileFullName EndsWithCIS ".exe" OR FileFullName EndsWithCIS ".zip" OR FileFullName EndsWithCIS ".ps1" OR FileFullName ContainsCIS ".ht" ))
 ```
@@ -37,4 +37,10 @@ Windows (Windows 8 and Windows 10) feature a native ISO mounting tool. Opening a
 
 ```
 TgtFilePath RegExp "AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.Outlook" AND TgtFileExtension In ("iso", "img")
+```
+### Suspicious signed VMware files in the VMware directory.
+Description:
+Note: Credit to Billy (Tetra Defense)
+```
+(TgtFilePath RegExp "Program Files\\VMware\\VMware Tools\\bin" OR TgtFilePath RegExp "Program Files\\VMware\\tools\\bin") AND EventType IN ( "File Scan", "Pre Execution Detection", "File Modification" , "File Creation" , "File Deletion" , "File Rename" ) AND TgtFileExtension = "exe" and TgtProcPublisher contains "<Insert Remote Tool Publisher Name>"
 ```
