@@ -25,3 +25,4 @@ Credit to Drew Hjelm (Tetra Defense) and Max_Malyutin(Twitter Handle)
 ```
 SrcProcParentName = "regsvr32.exe" AND (TgtFilePath RegExp "ProgramData\\Microsoft" OR TgtFilePath RegExp "AppData\\Roaming\\Microsoft" OR TgtFilePath RegExp "C:\\[a-z]{5}\\[^\\\{\}]+$") AND TgtFileExtension In ("dll", "ocx", "good")
 ```
+
