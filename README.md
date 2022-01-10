@@ -12,6 +12,7 @@ C:\Users\<username>\AppData\Microsoft\[Random]\
 C:\ProgramData\Microsoft\[Random]\
 C:\[a-z]{5}\
 This regex will detect any of the below folder names and if change to new ones.
+
 Example: C:\Datop\[Random].ocx 
 Example: C:\Jambo\[Random].ocx 
 Example: C:\Babmo\[Random].ocx 
