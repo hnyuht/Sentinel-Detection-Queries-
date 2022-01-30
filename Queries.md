@@ -1,6 +1,8 @@
-I decided to start sharing my detection and threat hunting queries that I made in SentinelOne. First, I want to thank Tetra Defense for allowing me to research, develop, hunt, build, and work here. I also wish to thank Brad Roughan, Dan Spina, Drew Hjelm, Joe Wedderspoon, William (Billy) Cordio, and others at Tetra Defense but also I want to credit other security resources for helping me create these queries. All other credit will be found under each query.
+I decided to start sharing my detection and threat hunting queries that I made in SentinelOne. 
 
-I also want to personally thank David Kruse and Marlene Jones (Tetra Defense) for helping me with this idea.
+First, I want to thank Tetra Defense for allowing me to research, develop, hunt, build, and work here. I also wish to thank Bradley Roughan, Nathan Little, Daniel Spina, Drew Hjelm, Joe Wedderspoon, William Cordio, and others at Tetra Defense but also I want to credit other security resources for helping me create these queries. All other credit will be found under each query.
+
+I also want to personally thank David Kruse and Marlene Jones for helping me with this idea.
 
 # Sentinel-Detection-Queries
 
