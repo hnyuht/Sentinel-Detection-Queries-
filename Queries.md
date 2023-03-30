@@ -46,3 +46,17 @@ Note: Credit to Billy (Tetra Defense)
 ```
 (TgtFilePath RegExp "Program Files\\VMware\\VMware Tools\\bin" OR TgtFilePath RegExp "Program Files\\VMware\\tools\\bin") AND EventType IN ( "File Scan", "Pre Execution Detection", "File Modification" , "File Creation" , "File Deletion" , "File Rename" ) AND TgtFileExtension = "exe" and TgtProcPublisher contains "<Insert Remote Tool Publisher Name>"
 ```
+
+### 3CXDesktop Signer.
+Description: Looks for 3CXDesktop 
+Note: Not tested. Recycled an old query but I am confident it works.
+```
+(SrcProcPublisher Contains Anycase "3CX Ltd" OR TgtProcPublisher Contains Anycase "3CX Ltd") AND EventType = "Process Creation"
+```
+
+### 3CXDesktop Download Folders EXE and DLL.
+Description: Looks for 3CXDesktop EXE and DLL if installed or downloaded.
+Note: Not tested. Recycled an old query but I am confident it works.
+```
+TgtFilePath RegExp "AppData\Local\Programs\3CXDesktopApp" AND TgtFileExtension In ("dll", "exe")
+```
