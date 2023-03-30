@@ -58,5 +58,5 @@ Note: Not tested. Recycled an old query but I am confident it works.
 Description: Looks for 3CXDesktop EXE and DLL if installed or downloaded.
 Note: Not tested. Recycled an old query but I am confident it works.
 ```
-TgtFilePath RegExp "AppData\Local\Programs\3CXDesktopApp" AND TgtFileExtension In ("dll", "exe")
+TgtFilePath RegExp "AppData\\Local\\Programs\\3CXDesktopApp" AND TgtFileExtension In ("dll", "exe")
 ```
